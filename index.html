@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>
+			National wide training and sensitization program
+		</title>
+		<!-- Leaflet -->
+		<link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+		<script src="lib/leaflet/leaflet.js"></script>
+		<script src="data/district.geojson"></script>
+		<style type="text/css">
+			#map { height : 700px; }
+		</style>
+	</head>
+	<body>
+		<h1>National wide training and sensitization program</h1>
+		<div id="map"></div>
+		<script>
+	
+			var map = L.map('map').setView([43.8476, 18.3564], 13);
+			var countriesLayer = L.geoJson(district).addTo(map);
+			map.fitBounds(countriesLayer.getBounds());
+		
+		var point = [27.7172, 85.3240];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Kathmandu</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.6646, 87.2718];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Itahari</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.7271, 85.9407];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Janakpur</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.6398, 87.8942];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Jhapa</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.2380, 83.9956];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Pokhara</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.5291, 84.3542];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Chitwan</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.4368, 27.4368];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Hetauda</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.6874, 83.4323];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Butwal</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.5175, 81.7787];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Surkhet</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.4764, 84.6897];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Gorkha</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.0548, 81.6145];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Nepalgunj</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.6852, 80.6216];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Dhangadhi</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.8314, 80.8987];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Kailali</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [29.2089, 81.7349];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Kalikot</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [28.1780, 83.6987];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Parbat</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.7784, 86.1752];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Dolakha</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.1341, 85.0649];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Bara</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [26.8760, 87.9335];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Ilam</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.6644, 85.3188];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Patan</b><div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+			var point = [27.9711, 84.8985];
+			var myMarker = L.marker(point);
+			myMarker.addTo(map);
+			myMarker.bindPopup(
+				'<b>Dhading<div>National wide training and sensitization program, Date: ....., Venue: ........ ,Contact: .....</div>',
+				{minWidth : 256}
+			);
+		</script>
+	</body>
+</html>
